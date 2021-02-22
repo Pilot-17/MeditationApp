@@ -13,6 +13,17 @@
 		B2BED90225E3E28D00B23A93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2BED90025E3E28D00B23A93 /* Main.storyboard */; };
 		B2BED90425E3E28F00B23A93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2BED90325E3E28F00B23A93 /* Assets.xcassets */; };
 		B2BED90725E3E28F00B23A93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2BED90525E3E28F00B23A93 /* LaunchScreen.storyboard */; };
+		B2BED91C25E3E80F00B23A93 /* Alegreya-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2BED91125E3E80F00B23A93 /* Alegreya-Italic.ttf */; };
+		B2BED91D25E3E80F00B23A93 /* Alegreya-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2BED91225E3E80F00B23A93 /* Alegreya-ExtraBold.ttf */; };
+		B2BED91E25E3E80F00B23A93 /* Alegreya-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2BED91325E3E80F00B23A93 /* Alegreya-MediumItalic.ttf */; };
+		B2BED91F25E3E80F00B23A93 /* Alegreya-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2BED91425E3E80F00B23A93 /* Alegreya-ExtraBoldItalic.ttf */; };
+		B2BED92025E3E80F00B23A93 /* Alegreya-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2BED91525E3E80F00B23A93 /* Alegreya-Bold.ttf */; };
+		B2BED92125E3E80F00B23A93 /* Alegreya-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2BED91625E3E80F00B23A93 /* Alegreya-BlackItalic.ttf */; };
+		B2BED92225E3E80F00B23A93 /* Alegreya-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2BED91725E3E80F00B23A93 /* Alegreya-BoldItalic.ttf */; };
+		B2BED92325E3E80F00B23A93 /* Alegreya-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2BED91825E3E80F00B23A93 /* Alegreya-Black.ttf */; };
+		B2BED92425E3E80F00B23A93 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = B2BED91925E3E80F00B23A93 /* OFL.txt */; };
+		B2BED92525E3E80F00B23A93 /* Alegreya-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2BED91A25E3E80F00B23A93 /* Alegreya-Regular.ttf */; };
+		B2BED92625E3E80F00B23A93 /* Alegreya-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2BED91B25E3E80F00B23A93 /* Alegreya-Medium.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +35,17 @@
 		B2BED90325E3E28F00B23A93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2BED90625E3E28F00B23A93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2BED90825E3E28F00B23A93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2BED91125E3E80F00B23A93 /* Alegreya-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alegreya-Italic.ttf"; sourceTree = "<group>"; };
+		B2BED91225E3E80F00B23A93 /* Alegreya-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alegreya-ExtraBold.ttf"; sourceTree = "<group>"; };
+		B2BED91325E3E80F00B23A93 /* Alegreya-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alegreya-MediumItalic.ttf"; sourceTree = "<group>"; };
+		B2BED91425E3E80F00B23A93 /* Alegreya-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alegreya-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		B2BED91525E3E80F00B23A93 /* Alegreya-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alegreya-Bold.ttf"; sourceTree = "<group>"; };
+		B2BED91625E3E80F00B23A93 /* Alegreya-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alegreya-BlackItalic.ttf"; sourceTree = "<group>"; };
+		B2BED91725E3E80F00B23A93 /* Alegreya-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alegreya-BoldItalic.ttf"; sourceTree = "<group>"; };
+		B2BED91825E3E80F00B23A93 /* Alegreya-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alegreya-Black.ttf"; sourceTree = "<group>"; };
+		B2BED91925E3E80F00B23A93 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		B2BED91A25E3E80F00B23A93 /* Alegreya-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alegreya-Regular.ttf"; sourceTree = "<group>"; };
+		B2BED91B25E3E80F00B23A93 /* Alegreya-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alegreya-Medium.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +85,27 @@
 				B2BED90325E3E28F00B23A93 /* Assets.xcassets */,
 				B2BED90525E3E28F00B23A93 /* LaunchScreen.storyboard */,
 				B2BED90825E3E28F00B23A93 /* Info.plist */,
+				B2BED91025E3E80F00B23A93 /* Fonts-Alegreya */,
 			);
 			path = MeditationApp;
+			sourceTree = "<group>";
+		};
+		B2BED91025E3E80F00B23A93 /* Fonts-Alegreya */ = {
+			isa = PBXGroup;
+			children = (
+				B2BED91125E3E80F00B23A93 /* Alegreya-Italic.ttf */,
+				B2BED91225E3E80F00B23A93 /* Alegreya-ExtraBold.ttf */,
+				B2BED91325E3E80F00B23A93 /* Alegreya-MediumItalic.ttf */,
+				B2BED91425E3E80F00B23A93 /* Alegreya-ExtraBoldItalic.ttf */,
+				B2BED91525E3E80F00B23A93 /* Alegreya-Bold.ttf */,
+				B2BED91625E3E80F00B23A93 /* Alegreya-BlackItalic.ttf */,
+				B2BED91725E3E80F00B23A93 /* Alegreya-BoldItalic.ttf */,
+				B2BED91825E3E80F00B23A93 /* Alegreya-Black.ttf */,
+				B2BED91925E3E80F00B23A93 /* OFL.txt */,
+				B2BED91A25E3E80F00B23A93 /* Alegreya-Regular.ttf */,
+				B2BED91B25E3E80F00B23A93 /* Alegreya-Medium.ttf */,
+			);
+			path = "Fonts-Alegreya";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +165,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2BED91C25E3E80F00B23A93 /* Alegreya-Italic.ttf in Resources */,
+				B2BED92325E3E80F00B23A93 /* Alegreya-Black.ttf in Resources */,
+				B2BED91E25E3E80F00B23A93 /* Alegreya-MediumItalic.ttf in Resources */,
+				B2BED92625E3E80F00B23A93 /* Alegreya-Medium.ttf in Resources */,
 				B2BED90725E3E28F00B23A93 /* LaunchScreen.storyboard in Resources */,
+				B2BED91F25E3E80F00B23A93 /* Alegreya-ExtraBoldItalic.ttf in Resources */,
+				B2BED92125E3E80F00B23A93 /* Alegreya-BlackItalic.ttf in Resources */,
+				B2BED92425E3E80F00B23A93 /* OFL.txt in Resources */,
+				B2BED91D25E3E80F00B23A93 /* Alegreya-ExtraBold.ttf in Resources */,
+				B2BED92525E3E80F00B23A93 /* Alegreya-Regular.ttf in Resources */,
+				B2BED92025E3E80F00B23A93 /* Alegreya-Bold.ttf in Resources */,
 				B2BED90425E3E28F00B23A93 /* Assets.xcassets in Resources */,
 				B2BED90225E3E28D00B23A93 /* Main.storyboard in Resources */,
+				B2BED92225E3E80F00B23A93 /* Alegreya-BoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
