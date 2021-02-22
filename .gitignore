@@ -1,0 +1,9 @@
+# Xcode
+build/
+DerivedData/
+xcuserdata/
+*.xccheckout
+*.xcscmblueprint
+**.xcconfig
+# Pods
+/Pods
