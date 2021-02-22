@@ -81,11 +81,11 @@
 				B2BED8FA25E3E28D00B23A93 /* AppDelegate.swift */,
 				B2BED8FC25E3E28D00B23A93 /* SceneDelegate.swift */,
 				B2BED8FE25E3E28D00B23A93 /* ViewController.swift */,
+				B2BED91025E3E80F00B23A93 /* Fonts-Alegreya */,
 				B2BED90025E3E28D00B23A93 /* Main.storyboard */,
 				B2BED90325E3E28F00B23A93 /* Assets.xcassets */,
 				B2BED90525E3E28F00B23A93 /* LaunchScreen.storyboard */,
 				B2BED90825E3E28F00B23A93 /* Info.plist */,
-				B2BED91025E3E80F00B23A93 /* Fonts-Alegreya */,
 			);
 			path = MeditationApp;
 			sourceTree = "<group>";
@@ -101,9 +101,9 @@
 				B2BED91625E3E80F00B23A93 /* Alegreya-BlackItalic.ttf */,
 				B2BED91725E3E80F00B23A93 /* Alegreya-BoldItalic.ttf */,
 				B2BED91825E3E80F00B23A93 /* Alegreya-Black.ttf */,
-				B2BED91925E3E80F00B23A93 /* OFL.txt */,
 				B2BED91A25E3E80F00B23A93 /* Alegreya-Regular.ttf */,
 				B2BED91B25E3E80F00B23A93 /* Alegreya-Medium.ttf */,
+				B2BED91925E3E80F00B23A93 /* OFL.txt */,
 			);
 			path = "Fonts-Alegreya";
 			sourceTree = "<group>";
