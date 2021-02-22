@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  OnboardingViewController.swift
 //  MeditationApp
 //
 //  Created by Almat Kulbaev on 22.02.2021.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class OnboardingViewController: UIViewController {
 
   lazy var imageLogo: UIImageView = {
     let img = UIImageView()
@@ -37,22 +37,20 @@ class ViewController: UIViewController {
     lbl.textAlignment = .center
     lbl.text = "Наслаждайся отборочными. \nБудь внимателен. \nДелай Хорошо."
     lbl.font = UIFont(name: "Alegreya-Medium", size: 25)
-//    lbl.isUserInteractionEnabled = true
     return lbl
   }()
   
   lazy var buttonLogin: UIButton = {
-    let btn = UIButton()
+    let btn = UIButton(type: .system)
+    btn.tintColor = .white
     btn.translatesAutoresizingMaskIntoConstraints = false
     btn.backgroundColor = UIColor(red: 0.486, green: 0.604, blue: 0.573, alpha: 1)
     btn.setTitle("Войти в аккаунт", for: .normal)
     btn.titleLabel?.font = UIFont(name: "Alegreya-Medium", size: 25)
     btn.layer.cornerRadius = 10
-//    btn.isUserInteractionEnabled = true
+    btn.addTarget(self, action: #selector(loginButtonAction), for: .touchUpInside)
     return btn
   }()
-  
-  // satck view
   
   lazy var signUpLabel: UILabel = {
     let lbl = UILabel()
@@ -64,14 +62,14 @@ class ViewController: UIViewController {
   }()
   
   lazy var signUpButton: UIButton = {
-    let btn = UIButton()
+    let btn = UIButton(type: .system)
+    btn.tintColor = .white
     btn.translatesAutoresizingMaskIntoConstraints = false
     btn.setTitle("Зарегистрируйтесь", for: .normal)
     btn.titleLabel?.font = UIFont(name: "Alegreya-Bold", size: 20)
     btn.isUserInteractionEnabled = true
     return btn
   }()
-  
   
   lazy var stackView: UIStackView = {
     let stackView = UIStackView()
@@ -84,9 +82,6 @@ class ViewController: UIViewController {
     stackView.translatesAutoresizingMaskIntoConstraints = false
     return stackView
   }()
-  
-
-  
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -125,6 +120,12 @@ class ViewController: UIViewController {
       imageLogo.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -10),
       imageLogo.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 10),
         ])
+  }
+  
+  @objc func loginButtonAction() {
+    let vc = LoginViewController()
+    vc.modalPresentationStyle = .fullScreen
+    present(vc, animated: true, completion: nil)
   }
 }
 
