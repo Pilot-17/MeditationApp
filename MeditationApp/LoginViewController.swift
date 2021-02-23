@@ -87,10 +87,35 @@ class LoginViewController: UIViewController {
     return stackView
   }()
   
+  lazy var loginLabel: UILabel = {
+    let lbl = UILabel()
+    lbl.translatesAutoresizingMaskIntoConstraints = false
+    lbl.textColor = .white
+    lbl.text = "Вход"
+    lbl.font = UIFont(name: "Alegreya-Medium", size: 30)
+    return lbl
+  }()
+  
+  lazy var logoImageView: UIImageView = {
+    let img = UIImageView()
+    img.translatesAutoresizingMaskIntoConstraints = false
+    img.image = UIImage(named: "Logo")
+    img.contentMode = .scaleAspectFit
+    img.layer.masksToBounds = true
+    return img
+  }()
   
   override func viewDidLoad() {
     super.viewDidLoad()
     view.backgroundColor = UIColor(red: 0.145, green: 0.2, blue: 0.204, alpha: 1)
+    
+    let imageBackground = UIImageView(image: UIImage(named: "backgroundLogin"))
+    view.addSubview(imageBackground)
+    imageBackground.translatesAutoresizingMaskIntoConstraints  = false
+    imageBackground.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+    imageBackground.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+    imageBackground.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+    
     
     view.addSubview(emailUIView)
     view.addSubview(passwordUIView)
@@ -98,9 +123,24 @@ class LoginViewController: UIViewController {
     view.addSubview(passwordTextField)
     view.addSubview(buttonLogin)
     view.addSubview(stackView)
+    view.addSubview(loginLabel)
+    view.addSubview(logoImageView)
     
     NSLayoutConstraint.activate([
-      stackView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -211),
+      loginLabel.bottomAnchor.constraint(equalTo: emailTextField.topAnchor, constant: -100),
+      loginLabel.leftAnchor.constraint(equalTo: emailTextField.leftAnchor),
+      loginLabel.heightAnchor.constraint(equalToConstant: 45)
+        ])
+    
+    NSLayoutConstraint.activate([
+      logoImageView.bottomAnchor.constraint(equalTo: loginLabel.topAnchor, constant: -10),
+      logoImageView.leftAnchor.constraint(equalTo: loginLabel.leftAnchor, constant: -20),
+      logoImageView.heightAnchor.constraint(equalToConstant: 100),
+      logoImageView.widthAnchor.constraint(equalToConstant: 100)
+        ])
+    
+    NSLayoutConstraint.activate([ 
+      stackView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: view.bounds.height < 700 ? -100 : -150),
       stackView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor)
         ])
     
@@ -108,14 +148,15 @@ class LoginViewController: UIViewController {
       buttonLogin.bottomAnchor.constraint(equalTo: stackView.topAnchor, constant: -23),
       buttonLogin.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -27),
       buttonLogin.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 27),
-      buttonLogin.heightAnchor.constraint(equalToConstant: 61)
+      buttonLogin.heightAnchor.constraint(equalToConstant: view.layer.bounds.width/6.5)
+      
         ])
     
     NSLayoutConstraint.activate([
       emailTextField.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -35),
       emailTextField.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 35),
       emailTextField.heightAnchor.constraint(equalToConstant: 40),
-      emailTextField.bottomAnchor.constraint(equalTo: passwordTextField.topAnchor, constant: -40)
+      emailTextField.bottomAnchor.constraint(equalTo: passwordTextField.topAnchor, constant: -30)
         ])
     
     NSLayoutConstraint.activate([
@@ -131,6 +172,7 @@ class LoginViewController: UIViewController {
       passwordTextField.heightAnchor.constraint(equalToConstant: 40),
       passwordTextField.bottomAnchor.constraint(equalTo: buttonLogin.topAnchor, constant: -55)
         ])
+    
     NSLayoutConstraint.activate([
       passwordUIView.bottomAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 0),
       passwordUIView.rightAnchor.constraint(equalTo: passwordTextField.rightAnchor, constant: 0),
@@ -138,7 +180,5 @@ class LoginViewController: UIViewController {
       passwordUIView.heightAnchor.constraint(equalToConstant: 2)
         ])
 
-    
-    
   }
 }

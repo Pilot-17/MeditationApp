@@ -92,7 +92,7 @@ class OnboardingViewController: UIViewController {
     view.addSubview(stackView)
     
     NSLayoutConstraint.activate([
-      stackView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -85),
+      stackView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: -40 ),
       stackView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor)
         ])
     
@@ -100,7 +100,7 @@ class OnboardingViewController: UIViewController {
       buttonLogin.bottomAnchor.constraint(equalTo: self.stackView.topAnchor, constant: -20),
       buttonLogin.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -27),
       buttonLogin.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 27),
-      buttonLogin.heightAnchor.constraint(equalToConstant: 61)
+      buttonLogin.heightAnchor.constraint(equalToConstant: view.layer.bounds.width/6.5)
         ])
     
     NSLayoutConstraint.activate([
