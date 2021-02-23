@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17700" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Alegreya-Medium.ttf">
+            <string>Alegreya-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BigCollectionViewCell" customModule="MeditationApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="417" height="260"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="417" height="260"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="leh-XP-xOC">
+                        <rect key="frame" x="0.0" y="50" width="417" height="170"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Заголовок блока" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bT8-pm-fOo">
+                                <rect key="frame" x="30" y="22" width="179.5" height="34.5"/>
+                                <fontDescription key="fontDescription" name="Alegreya-Medium" family="Alegreya" pointSize="25"/>
+                                <color key="textColor" red="0.14509803921568626" green="0.20000000000000001" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Кратенькое описание блока с двумя строчками" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhZ-hB-9Cv">
+                                <rect key="frame" x="30" y="56.5" width="168" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="9YR-Yk-Slr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Alegreya-Medium" family="Alegreya" pointSize="15"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXO-7R-JcA">
+                                <rect key="frame" x="30" y="109.5" width="138" height="39"/>
+                                <color key="backgroundColor" red="0.14509803921568626" green="0.20000000000000001" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="bEK-xN-dS1"/>
+                                    <constraint firstAttribute="height" constant="39" id="cLk-jx-SZa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Alegreya-Medium" family="Alegreya" pointSize="15"/>
+                                <state key="normal" title="подробнее">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="rQx-c9-cPa">
+                                <rect key="frame" x="178" y="30" width="229" height="120"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.95294117647058818" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="xhZ-hB-9Cv" firstAttribute="leading" secondItem="bT8-pm-fOo" secondAttribute="leading" id="5YF-xo-8CH"/>
+                            <constraint firstItem="rQx-c9-cPa" firstAttribute="leading" secondItem="aXO-7R-JcA" secondAttribute="trailing" constant="10" id="9oq-s5-9vb"/>
+                            <constraint firstItem="xhZ-hB-9Cv" firstAttribute="trailing" secondItem="aXO-7R-JcA" secondAttribute="trailing" constant="30" id="C5q-no-8MT"/>
+                            <constraint firstAttribute="trailing" secondItem="rQx-c9-cPa" secondAttribute="trailing" constant="10" id="JNK-0o-Dm6"/>
+                            <constraint firstItem="bT8-pm-fOo" firstAttribute="top" secondItem="leh-XP-xOC" secondAttribute="top" constant="22" id="JY4-aI-3u4"/>
+                            <constraint firstItem="aXO-7R-JcA" firstAttribute="top" secondItem="xhZ-hB-9Cv" secondAttribute="bottom" constant="12" id="OiT-8E-XZo"/>
+                            <constraint firstItem="xhZ-hB-9Cv" firstAttribute="top" secondItem="bT8-pm-fOo" secondAttribute="bottom" id="PeP-xV-AHA"/>
+                            <constraint firstAttribute="height" constant="170" id="fjZ-tp-rKs"/>
+                            <constraint firstItem="rQx-c9-cPa" firstAttribute="top" secondItem="leh-XP-xOC" secondAttribute="top" constant="30" id="nsg-AV-tnu"/>
+                            <constraint firstItem="bT8-pm-fOo" firstAttribute="leading" secondItem="leh-XP-xOC" secondAttribute="leading" constant="30" id="qFR-QY-HrN"/>
+                            <constraint firstItem="aXO-7R-JcA" firstAttribute="leading" secondItem="xhZ-hB-9Cv" secondAttribute="leading" id="wCC-8C-nAw"/>
+                            <constraint firstAttribute="bottom" secondItem="rQx-c9-cPa" secondAttribute="bottom" constant="20" id="xMh-ep-qUK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="leh-XP-xOC" secondAttribute="trailing" id="99n-pr-YJh"/>
+                <constraint firstItem="leh-XP-xOC" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="NfT-us-Fff"/>
+                <constraint firstItem="leh-XP-xOC" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="x88-SA-QAV"/>
+            </constraints>
+            <size key="customSize" width="417" height="260"/>
+            <connections>
+                <outlet property="button" destination="aXO-7R-JcA" id="9jB-mE-ZJq"/>
+                <outlet property="view" destination="leh-XP-xOC" id="nWX-gZ-oOq"/>
+            </connections>
+            <point key="canvasLocation" x="141.30434782608697" y="72.991071428571431"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Logo" width="375" height="453"/>
+    </resources>
+</document>

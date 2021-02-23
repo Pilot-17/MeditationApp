@@ -123,7 +123,7 @@ class OnboardingViewController: UIViewController {
   }
   
   @objc func loginButtonAction() {
-    let vc = LoginViewController()
+    let vc = MainViewController()
     vc.modalPresentationStyle = .fullScreen
     present(vc, animated: true, completion: nil)
   }
