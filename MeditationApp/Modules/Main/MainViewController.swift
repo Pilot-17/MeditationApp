@@ -163,7 +163,7 @@ extension MainViewController {
     snapshot.appendItems(Array(5...20).map { Feelings(id: $0, title: "\($0)", image: nil, description: "") }, toSection: .second)
     
     
-    dataSource?.supplementaryViewProvider = { [weak self] collectionView, kind, indexPath in
+    dataSource?.supplementaryViewProvider = {  collectionView, kind, indexPath in
       guard let sectionHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: SectionHeader.reuseIdentifier, for: indexPath) as? SectionHeader else {
         return nil
       }
