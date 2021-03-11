@@ -1,13 +1,30 @@
 //
-//  LoginViewController.swift
+//  LoginView.swift
 //  MeditationApp
 //
-//  Created by Almat Kulbaev on 22.02.2021.
+//  Created by Almat Kulbaev on 05.03.2021.
 //
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LiginView: UIView {
+  
+  var delegate: LoginViewControllerProtocol?
+
+  init() {
+    super.init(frame: .zero)
+    addSubview()
+    loginButton.addTarget(self, action: #selector(loginButtonAction), for: .touchUpInside)
+  }
+  
+  override func layoutSubviews() {
+    setupLayout()
+    backgroundColor = UIColor(red: 0.145, green: 0.2, blue: 0.204, alpha: 1)
+  }
+  
+  required init?(coder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
+  }
   
   lazy var emailTextField: UITextField = {
     let txtFld = UITextField()
@@ -45,7 +62,7 @@ class LoginViewController: UIViewController {
     return view
   }()
   
-  lazy var buttonLogin: UIButton = {
+  lazy var loginButton: UIButton = {
     let btn = UIButton(type: .system)
     btn.tintColor = .white
     btn.translatesAutoresizingMaskIntoConstraints = false
@@ -105,27 +122,42 @@ class LoginViewController: UIViewController {
     return img
   }()
   
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    view.backgroundColor = UIColor(red: 0.145, green: 0.2, blue: 0.204, alpha: 1)
+  @objc func loginButtonAction() {
+    delegate?.loginButtonAction()
+  }
+
+}
+
+// MARK: Add Subview
+
+extension LiginView {
+  
+  func addSubview() {
+    
+    addSubview(emailUIView)
+    addSubview(passwordUIView)
+    addSubview(emailTextField)
+    addSubview(passwordTextField)
+    addSubview(loginButton)
+    addSubview(stackView)
+    addSubview(loginLabel)
+    addSubview(logoImageView)
     
     let imageBackground = UIImageView(image: UIImage(named: "backgroundLogin"))
-    view.addSubview(imageBackground)
+    addSubview(imageBackground)
     imageBackground.translatesAutoresizingMaskIntoConstraints  = false
-    imageBackground.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-    imageBackground.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-    imageBackground.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+    imageBackground.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+    imageBackground.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
+    imageBackground.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
     
-    
-    view.addSubview(emailUIView)
-    view.addSubview(passwordUIView)
-    view.addSubview(emailTextField)
-    view.addSubview(passwordTextField)
-    view.addSubview(buttonLogin)
-    view.addSubview(stackView)
-    view.addSubview(loginLabel)
-    view.addSubview(logoImageView)
-    
+  }
+}
+
+// MARK: Setup Layout
+
+extension LiginView {
+  
+  func setupLayout() {
     NSLayoutConstraint.activate([
       loginLabel.bottomAnchor.constraint(equalTo: emailTextField.topAnchor, constant: -100),
       loginLabel.leftAnchor.constraint(equalTo: emailTextField.leftAnchor),
@@ -139,22 +171,22 @@ class LoginViewController: UIViewController {
       logoImageView.widthAnchor.constraint(equalToConstant: 100)
         ])
     
-    NSLayoutConstraint.activate([ 
-      stackView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: view.bounds.height < 700 ? -100 : -150),
-      stackView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor)
+    NSLayoutConstraint.activate([
+      stackView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: bounds.height < 700 ? -100 : -150),
+      stackView.centerXAnchor.constraint(equalTo: centerXAnchor)
         ])
     
     NSLayoutConstraint.activate([
-      buttonLogin.bottomAnchor.constraint(equalTo: stackView.topAnchor, constant: -23),
-      buttonLogin.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -27),
-      buttonLogin.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 27),
-      buttonLogin.heightAnchor.constraint(equalToConstant: view.layer.bounds.width/6.5)
+      loginButton.bottomAnchor.constraint(equalTo: stackView.topAnchor, constant: -23),
+      loginButton.rightAnchor.constraint(equalTo: rightAnchor, constant: -27),
+      loginButton.leftAnchor.constraint(equalTo: leftAnchor, constant: 27),
+      loginButton.heightAnchor.constraint(equalToConstant: layer.bounds.width/6.5)
       
         ])
     
     NSLayoutConstraint.activate([
-      emailTextField.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -35),
-      emailTextField.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 35),
+      emailTextField.rightAnchor.constraint(equalTo: rightAnchor, constant: -35),
+      emailTextField.leftAnchor.constraint(equalTo: leftAnchor, constant: 35),
       emailTextField.heightAnchor.constraint(equalToConstant: 40),
       emailTextField.bottomAnchor.constraint(equalTo: passwordTextField.topAnchor, constant: -30)
         ])
@@ -167,10 +199,10 @@ class LoginViewController: UIViewController {
         ])
     
     NSLayoutConstraint.activate([
-      passwordTextField.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -35),
-      passwordTextField.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 35),
+      passwordTextField.rightAnchor.constraint(equalTo: rightAnchor, constant: -35),
+      passwordTextField.leftAnchor.constraint(equalTo: leftAnchor, constant: 35),
       passwordTextField.heightAnchor.constraint(equalToConstant: 40),
-      passwordTextField.bottomAnchor.constraint(equalTo: buttonLogin.topAnchor, constant: -55)
+      passwordTextField.bottomAnchor.constraint(equalTo: loginButton.topAnchor, constant: -55)
         ])
     
     NSLayoutConstraint.activate([
@@ -179,6 +211,7 @@ class LoginViewController: UIViewController {
       passwordUIView.leftAnchor.constraint(equalTo: passwordTextField.leftAnchor, constant: 0),
       passwordUIView.heightAnchor.constraint(equalToConstant: 2)
         ])
-
   }
+  
 }
+

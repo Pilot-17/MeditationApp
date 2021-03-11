@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B20E67FA25F284E70097DDFF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E67F925F284E70097DDFF /* LoginView.swift */; };
+		B20E680225F2877B0097DDFF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E680125F2877B0097DDFF /* MainView.swift */; };
 		B20FA25F25E526DE0055C132 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20FA25E25E526DE0055C132 /* MainViewController.swift */; };
 		B20FA26325E52CE10055C132 /* QuotesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20FA26125E52CE10055C132 /* QuotesCollectionViewCell.swift */; };
 		B20FA26425E52CE10055C132 /* QuotesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B20FA26225E52CE10055C132 /* QuotesCollectionViewCell.xib */; };
 		B20FA26825E53B510055C132 /* FeelingsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20FA26625E53B510055C132 /* FeelingsCollectionViewCell.swift */; };
 		B20FA26925E53B510055C132 /* FeelingsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B20FA26725E53B510055C132 /* FeelingsCollectionViewCell.xib */; };
 		B227C37325F0090300849FD0 /* TextInformationEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B227C37225F0090300849FD0 /* TextInformationEnum.swift */; };
+		B256ABF625F2AA1800FCF7D5 /* LoginViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B256ABF525F2AA1800FCF7D5 /* LoginViewControllerProtocol.swift */; };
+		B256ABFF25F2AD4300FCF7D5 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B256ABFE25F2AD4300FCF7D5 /* TabBarViewController.swift */; };
+		B256AC0225F2AE4F00FCF7D5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B256AC0125F2AE4F00FCF7D5 /* ProfileViewController.swift */; };
+		B256AC0525F2AFE100FCF7D5 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B256AC0425F2AFE100FCF7D5 /* SectionHeader.swift */; };
 		B2741A2225E40760002D92E4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2741A2125E40760002D92E4 /* LoginViewController.swift */; };
 		B284566B25EFFAD0005DAE8B /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B284566A25EFFAD0005DAE8B /* OnboardingView.swift */; };
 		B284566E25F0002A005DAE8B /* OnboardingViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B284566D25F0002A005DAE8B /* OnboardingViewControllerProtocol.swift */; };
@@ -37,12 +43,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B20E67F925F284E70097DDFF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		B20E680125F2877B0097DDFF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		B20FA25E25E526DE0055C132 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B20FA26125E52CE10055C132 /* QuotesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesCollectionViewCell.swift; sourceTree = "<group>"; };
 		B20FA26225E52CE10055C132 /* QuotesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuotesCollectionViewCell.xib; sourceTree = "<group>"; };
 		B20FA26625E53B510055C132 /* FeelingsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelingsCollectionViewCell.swift; sourceTree = "<group>"; };
 		B20FA26725E53B510055C132 /* FeelingsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeelingsCollectionViewCell.xib; sourceTree = "<group>"; };
 		B227C37225F0090300849FD0 /* TextInformationEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInformationEnum.swift; sourceTree = "<group>"; };
+		B256ABF525F2AA1800FCF7D5 /* LoginViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerProtocol.swift; sourceTree = "<group>"; };
+		B256ABFE25F2AD4300FCF7D5 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		B256AC0125F2AE4F00FCF7D5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B256AC0425F2AFE100FCF7D5 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 		B2741A2125E40760002D92E4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B284566A25EFFAD0005DAE8B /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		B284566D25F0002A005DAE8B /* OnboardingViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewControllerProtocol.swift; sourceTree = "<group>"; };
@@ -79,6 +91,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B20E67FC25F2875B0097DDFF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B2741A2125E40760002D92E4 /* LoginViewController.swift */,
+				B256ABFE25F2AD4300FCF7D5 /* TabBarViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B20E67FE25F287650097DDFF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B20E67F925F284E70097DDFF /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B256ABF825F2AA2D00FCF7D5 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				B256ABF525F2AA1800FCF7D5 /* LoginViewControllerProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		B256AC0725F2B3C300FCF7D5 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				B2A405A825EE121400D90693 /* Feelings.swift */,
+				B2A405AB25EE122200D90693 /* Quotes.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		B284566925EFFAA9005DAE8B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,9 +152,9 @@
 		B2A4059825EE10F800D90693 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				B284566F25F0002F005DAE8B /* Protocol */,
 				B284566925EFFAA9005DAE8B /* Controller */,
 				B284566C25EFFAD4005DAE8B /* View */,
-				B284566F25F0002F005DAE8B /* Protocol */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -116,7 +162,9 @@
 		B2A4059925EE110300D90693 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				B2741A2125E40760002D92E4 /* LoginViewController.swift */,
+				B256ABF825F2AA2D00FCF7D5 /* Protocol */,
+				B20E67FC25F2875B0097DDFF /* Controller */,
+				B20E67FE25F287650097DDFF /* View */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -125,10 +173,10 @@
 			isa = PBXGroup;
 			children = (
 				B20FA25E25E526DE0055C132 /* MainViewController.swift */,
+				B20E680125F2877B0097DDFF /* MainView.swift */,
+				B256AC0425F2AFE100FCF7D5 /* SectionHeader.swift */,
 				B2A4059D25EE117E00D90693 /* QuotesCell */,
 				B2A405A025EE11BD00D90693 /* FeelingsCell */,
-				B2A405A825EE121400D90693 /* Feelings.swift */,
-				B2A405AB25EE122200D90693 /* Quotes.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -184,10 +232,12 @@
 				B2BED8FC25E3E28D00B23A93 /* SceneDelegate.swift */,
 				B227C37225F0090300849FD0 /* TextInformationEnum.swift */,
 				B2A4059C25EE111700D90693 /* Modules */,
+				B256AC0725F2B3C300FCF7D5 /* Entities */,
 				B2BED91025E3E80F00B23A93 /* Fonts-Alegreya */,
 				B2BED90325E3E28F00B23A93 /* Assets.xcassets */,
 				B2BED90525E3E28F00B23A93 /* LaunchScreen.storyboard */,
 				B2BED90825E3E28F00B23A93 /* Info.plist */,
+				B256AC0125F2AE4F00FCF7D5 /* ProfileViewController.swift */,
 			);
 			path = MeditationApp;
 			sourceTree = "<group>";
@@ -292,16 +342,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B256ABFF25F2AD4300FCF7D5 /* TabBarViewController.swift in Sources */,
 				B2741A2225E40760002D92E4 /* LoginViewController.swift in Sources */,
+				B20E680225F2877B0097DDFF /* MainView.swift in Sources */,
 				B2BED8FF25E3E28D00B23A93 /* OnboardingViewController.swift in Sources */,
+				B256ABF625F2AA1800FCF7D5 /* LoginViewControllerProtocol.swift in Sources */,
 				B20FA26825E53B510055C132 /* FeelingsCollectionViewCell.swift in Sources */,
 				B20FA26325E52CE10055C132 /* QuotesCollectionViewCell.swift in Sources */,
+				B256AC0225F2AE4F00FCF7D5 /* ProfileViewController.swift in Sources */,
 				B2BED8FB25E3E28D00B23A93 /* AppDelegate.swift in Sources */,
 				B284566B25EFFAD0005DAE8B /* OnboardingView.swift in Sources */,
 				B2BED8FD25E3E28D00B23A93 /* SceneDelegate.swift in Sources */,
 				B2A405A925EE121400D90693 /* Feelings.swift in Sources */,
 				B227C37325F0090300849FD0 /* TextInformationEnum.swift in Sources */,
 				B20FA25F25E526DE0055C132 /* MainViewController.swift in Sources */,
+				B256AC0525F2AFE100FCF7D5 /* SectionHeader.swift in Sources */,
+				B20E67FA25F284E70097DDFF /* LoginView.swift in Sources */,
 				B2A405AC25EE122200D90693 /* Quotes.swift in Sources */,
 				B284566E25F0002A005DAE8B /* OnboardingViewControllerProtocol.swift in Sources */,
 			);

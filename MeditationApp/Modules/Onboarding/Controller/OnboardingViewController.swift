@@ -14,7 +14,6 @@ class OnboardingViewController: UIViewController {
   override func loadView() {
     view = mainView
     mainView.delegate = self
-    
   }
   
   override func viewDidLoad() {
@@ -25,7 +24,7 @@ class OnboardingViewController: UIViewController {
 
 extension OnboardingViewController: OnboardingViewControllerProtocol {
   func loginButtonAction() {
-    let vc = MainViewController()
+    let vc = LoginViewController()
     vc.modalPresentationStyle = .fullScreen
     present(vc, animated: true, completion: nil)
   }
